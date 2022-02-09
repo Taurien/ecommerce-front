@@ -35,7 +35,7 @@ const Login = ({ showSignupForm }) => {
 		}
 
 		dispatch(login(emailValue, passwordValue));
-		navigate('/');
+		navigate('/ecommerce-front');
 	};
 
 	return (

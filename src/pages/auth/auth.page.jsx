@@ -27,7 +27,7 @@ const Auth = props => {
 	}, [dispatch]);
 
 	useEffect(() => {
-		if (isAuth) navigate('/');
+		if (isAuth) navigate('/ecommerce-front');
 	}, [isAuth, navigate]);
 
 	// Handlers
