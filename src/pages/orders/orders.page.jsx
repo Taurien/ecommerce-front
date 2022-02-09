@@ -22,8 +22,9 @@ const Orders = () => {
 
 	return (
 		<div className={classes['orders-list']}>
+			<h2>Items u bought</h2>
 			{
-				orders ?
+				orders &&
 					orders.map(item => 
 						<OrderItem
 							key={item.id}
@@ -32,7 +33,9 @@ const Orders = () => {
 							id={item.id}
 						/>
 					)
-					: <p>EMPTY</p>
+			}
+			{
+				orders?.length === 0 && <><h3>EMPTY</h3></>
 			}
 		</div>
 	);

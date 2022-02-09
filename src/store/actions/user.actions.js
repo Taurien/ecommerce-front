@@ -34,8 +34,8 @@ export const signup = (userData) => {
 			const {name, email, password} = userData
 			// console.log(name, email, password)
 
-			const response = await myInstance.post(
-				'/users',
+			const response = await axios.post(
+				`${process.env.REACT_APP_API_URL}/users`,
 				{
 					name: name,
 					email: email,

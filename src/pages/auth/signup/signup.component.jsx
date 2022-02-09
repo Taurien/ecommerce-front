@@ -41,6 +41,7 @@ const SignUp = ({ showLoginForm }) => {
 		};
 
 		dispatch(signup(userData));
+		showLoginForm()
 	};
 
 	return (
