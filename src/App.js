@@ -35,6 +35,7 @@ const App = () => {
 	return (
 		<div className="app">
 			{isAuth && <NavHeader />}
+			{/*  */}
 			{/* https://taurien.github.io/ecommerce-front/ */}
 			<Routes>
 				<Route index path="/ecommerce-front" element={<Home />} />
