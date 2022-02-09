@@ -24,7 +24,7 @@ const App = () => {
 
 	// Effects
 	useEffect(() => {
-		if (!isAuth) navigate('/auth');
+		if (!isAuth) navigate('auth');
 		// if (!isAuth) navigate('ecommerce-front/auth');
 	}, [isAuth, navigate]);
 
