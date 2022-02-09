@@ -11,7 +11,7 @@ import FormContainer from '../../../components/UI/form-container/form-container.
 
 import classes from './signup.styles.module.css';
 
-const SignUp = ({ showLoginForm }) => {
+const SignUp = ({ setNewAcc, showLoginForm }) => {
 	const dispatch = useDispatch();
 
 	// Refs
@@ -41,6 +41,7 @@ const SignUp = ({ showLoginForm }) => {
 		};
 
 		dispatch(signup(userData));
+		setNewAcc(true)
 		showLoginForm()
 	};
 

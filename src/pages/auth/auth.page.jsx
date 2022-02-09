@@ -18,6 +18,7 @@ const Auth = props => {
 	// State
 	const [showLoginForm, setShowLoginForm] = useState(true);
 	const isAuth = useSelector(state => state.user.isAuth);
+	const [ newAcc , setNewAcc ] = useState(false)
 
 	// Effects
 	useEffect(() => {
@@ -27,7 +28,8 @@ const Auth = props => {
 	}, [dispatch]);
 
 	useEffect(() => {
-		if (isAuth) navigate('/ecommerce-front');
+		if (isAuth) navigate('/');
+		// if (isAuth) navigate('/ecommerce-front');
 	}, [isAuth, navigate]);
 
 	// Handlers
@@ -42,9 +44,9 @@ const Auth = props => {
 	return (
 		<Fragment>
 			{showLoginForm ? (
-				<Login showSignupForm={showSignupHandler} />
+				<Login newAcc={newAcc} showSignupForm={showSignupHandler} />
 			) : (
-				<SignUp showLoginForm={showLoginHandler} />
+				<SignUp setNewAcc={setNewAcc} showLoginForm={showLoginHandler} />
 			)}
 		</Fragment>
 	);

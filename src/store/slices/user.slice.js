@@ -18,8 +18,8 @@ const userSlice = createSlice({
 			state.isAuth = false;
 		},
 		signup: (state, action) => {
-			state.userId = action.payload.id
-			state.userInfo = action.payload
+			// state.userId = action.payload.id
+			// state.userInfo = action.payload
 
 		},
 		checkAuth: (state, action) => {

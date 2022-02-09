@@ -45,7 +45,7 @@ export const signup = (userData) => {
 
 			const { user } = response.data.data;
 
-			dispatch(userActions.signup(user));
+			// dispatch(userActions.signup(user));
 		} catch (error) {
 			console.log(error);
 		}

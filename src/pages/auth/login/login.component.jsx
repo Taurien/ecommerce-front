@@ -12,7 +12,7 @@ import FormContainer from '../../../components/UI/form-container/form-container.
 
 import classes from './login.styles.module.css';
 
-const Login = ({ showSignupForm }) => {
+const Login = ({ newAcc, showSignupForm }) => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
@@ -35,12 +35,16 @@ const Login = ({ showSignupForm }) => {
 		}
 
 		dispatch(login(emailValue, passwordValue));
+		// navigate('/');
 		navigate('/ecommerce-front');
 	};
 
 	return (
 		<FormContainer>
 			<form className={classes.form} onSubmit={onSubmitHandler}>
+				{
+					newAcc && <><h5>now u can log using your previously submitted data </h5></>
+				}
 				<h3 className={classes.form__title}>Log In</h3>
 				<p className={classes.form__subtitle}>Enter your email and password</p>
 				<Input
