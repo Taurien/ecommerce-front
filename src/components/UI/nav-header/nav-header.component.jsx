@@ -17,23 +17,23 @@ const NavHeader = () => {
 
 	return (
 		<div className={classes.nav}>
-			<Link className={classes['title-container']} to="/ecommerce-front">
+			<Link className={classes['title-container']} to={'/ecommerce-front'}>
 				Academlo Shop
 			</Link>
 			<div className={classes.options}>
-				<Link className={classes.option} to="ecommerce-front/add-product">
+				<Link className={classes.option} to={'ecommerce-front/add-product'}>
 					Add product
 				</Link>
-				<Link className={classes.option} to="ecommerce-front/cart">
+				<Link className={classes.option} to={'ecommerce-front/cart'}>
 					View cart
 				</Link>
-				<Link className={classes.option} to="ecommerce-front/orders">
+				<Link className={classes.option} to={'ecommerce-front/orders'}>
 					View orders
 				</Link>
-				<Link className={classes.option} to="ecommerce-front/profile">
+				<Link className={classes.option} to={'ecommerce-front/profile'}>
 					View profile
 				</Link>
-				<Link onClick={onLogoutHandler} className={classes.option} to="ecommerce-front/auth">
+				<Link onClick={onLogoutHandler} className={classes.option} to={'ecommerce-front/auth'}>
 					Log out
 				</Link>
 			</div>

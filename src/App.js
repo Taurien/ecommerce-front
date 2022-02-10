@@ -39,15 +39,7 @@ const App = () => {
 			{isAuth && <NavHeader />}
 			{/* https://taurien.github.io/ecommerce-front/ */}
 			<Routes>
-				<Route path='/ecommerce-front'>
-					{/* <Route index path="/ecommerce-front" element={<Home />} /> */}
-					{/* <Route path="ecommerce-front/auth" element={<Auth onSignup={signupHandler} />} /> */}
-					{/* <Route path="ecommerce-front/add-product" element={<AddProduct />} /> */}
-					{/* <Route path="ecommerce-front/cart" element={<Cart />} /> */}
-					{/* <Route path="ecommerce-front/orders" element={<Orders />} /> */}
-					{/* <Route path="ecommerce-front/profile" element={<Profile />} /> */}
-					{/* <Route path="ecommerce-front/sales" element={<Sales />} /> */}
-
+				<Route path="/ecommerce-front">
 					<Route index element={<Home />} />
 					<Route path="auth" element={<Auth onSignup={signupHandler} />} />
 					<Route path="add-product" element={<AddProduct />} />
