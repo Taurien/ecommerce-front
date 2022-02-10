@@ -21,19 +21,19 @@ const NavHeader = () => {
 				Academlo Shop
 			</Link>
 			<div className={classes.options}>
-				<Link className={classes.option} to="add-product">
+				<Link className={classes.option} to="ecommerce-front/add-product">
 					Add product
 				</Link>
-				<Link className={classes.option} to="cart">
+				<Link className={classes.option} to="ecommerce-front/cart">
 					View cart
 				</Link>
-				<Link className={classes.option} to="orders">
+				<Link className={classes.option} to="ecommerce-front/orders">
 					View orders
 				</Link>
-				<Link className={classes.option} to="profile">
+				<Link className={classes.option} to="ecommerce-front/profile">
 					View profile
 				</Link>
-				<Link onClick={onLogoutHandler} className={classes.option} to="auth">
+				<Link onClick={onLogoutHandler} className={classes.option} to="ecommerce-front/auth">
 					Log out
 				</Link>
 			</div>
